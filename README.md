@@ -1,116 +1,97 @@
-# Emotional Analytics of a Career Transition  
-### Exploratory Text Analysis of a Bootcamp Experience
+Text Analytics aplicado a aprendizaje intensivo
 
-## Project Overview
+Ela Ruiz González
 
-This project is an experimental exploratory analysis based on a personal diary written during an intensive Data Analytics Bootcamp.
+🔎 Overview
 
-The objective was to transform unstructured narrative text into structured, analyzable data using Python and to identify emotional and behavioral patterns over time.
+Proyecto de análisis exploratorio aplicado a texto no estructurado generado durante un bootcamp intensivo.
 
-The project demonstrates how qualitative narrative can be converted into quantitative signals and analyzed using data workflows comparable to business environments.
+El objetivo es transformar entradas de diario en métricas cuantificables y evaluar si la carga formativa presenta relación observable con indicadores emocionales.
 
----
+🎯 Objetivo
 
-## Objectives
+Analizar si la intensidad asociada a estudio y exámenes muestra relación con patrones emocionales medibles derivados del texto.
 
-- Convert unstructured text into structured tabular data
-- Engineer measurable emotional and contextual variables
-- Analyze emotional intensity over time
-- Explore relationships between academic pressure and emotional variation
-- Produce analytical and dashboard-ready visualizations (Python + Tableau)
+📁 Dataset
 
----
+16 registros diarios
 
-## Dataset
+14 variables estructuradas
 
-- 19 dated diary entries
-- One row per entry
-- Text extracted and normalized programmatically
-- Keyword-based emotional and contextual variables generated
+0 duplicados
 
-Derived metrics:
-- `emotional_negative_intensity`
-- `emotional_positive_intensity`
-- `emotional_balance`
-- Word count per entry
+Tipado consistente (datetime64, int64)
 
----
+Nulos residuales controlados
 
-## Methodology
+Variables clave
 
-### Data Processing (Python)
-- PDF text extraction
-- Date parsing and structuring
-- Text normalization
-- Feature engineering via keyword frequency detection
+Conteo de palabras
 
-### Exploratory Data Analysis
-- Temporal aggregation (daily and monthly)
-- Correlation analysis (Pearson)
-- Scatter analysis between workload proxies and emotional intensity
-- Emotional balance trend modeling
+Keywords emocionales (ansiedad, frustración, miedo, cansancio, confianza, felicidad)
 
-### Visualization
-- Python (pandas, matplotlib, seaborn)
-- Tableau dashboard for executive-style visualization
+Keywords de actividad (estudio, examen)
 
----
+Totales positivos/negativos
 
-## Key Insights
+Índice emocional neto
 
-- Emotional intensity fluctuated episodically rather than decreasing linearly.
-- Peaks in negative emotional intensity aligned with evaluation periods.
-- Study-related mentions alone did not strongly predict emotional stress.
-- Positive and negative emotions coexisted during high-pressure phases.
-- Text length did not correlate with emotional intensity.
+Ratios normalizados por longitud de texto
 
----
+⚙️ Metodología
 
-## Business Relevance
+Limpieza y normalización del texto
 
-Although based on a personal dataset, the methodology is transferable to business contexts:
+Extracción manual de keywords emocionales
 
-- Transforming unstructured text (employee feedback, customer reviews, support tickets) into measurable signals.
-- Detecting emotional peaks linked to operational events (deadlines, launches, evaluations).
-- Enabling lightweight People Analytics approaches without complex NLP models.
-- Supporting early detection of stress patterns, disengagement, or churn signals.
+Feature engineering (totales, ratios e índice neto)
 
-The project illustrates how narrative data can inform decision-making when properly structured.
+Agregación temporal (diaria y mensual)
 
----
+Análisis exploratorio y evaluación visual
 
-## Technical Stack
+Enfoque estrictamente exploratorio debido al tamaño muestral reducido.
 
-- Python  
-  - pandas  
-  - matplotlib  
-  - seaborn  
-- Tableau  
-- Git & GitHub  
+📈 Hallazgos
 
----
+Predominio de emociones asociadas a carga cognitiva (ansiedad, cansancio, frustración).
 
-## Limitations
+Emociones positivas presentes de forma puntual.
 
-- Small dataset (19 entries)
-- Keyword-based proxy approach (no advanced NLP model)
-- Correlation analysis does not imply causation
+No se observa correlación lineal fuerte entre intensidad diaria y estado emocional neto.
 
-This is an exploratory analytical exercise, not a statistically generalizable study.
+La agregación mensual sugiere fases diferenciadas dentro del proceso formativo.
 
----
+⚠️ Limitaciones
 
-## Future Improvements
+Tamaño muestral reducido (N=16)
 
-- Expand dataset across longer time periods
-- Implement NLP techniques (tokenization, lemmatization, sentiment models)
-- Compare emotional patterns across different professional contexts
-- Develop predictive modeling for emotional intensity trends
+Diccionario emocional basado en matching literal
 
----
+No se aplicaron técnicas avanzadas de NLP ni modelos inferenciales
 
-## Author
+💡 Valor profesional
 
-Ela Ruiz González  
-Data Analyst | Performing Arts Background  
-Exploring the intersection of narrative, behavior, and data.
+Pipeline completo: texto → features → métricas → visualización
+
+Diseño de indicadores normalizados
+
+Análisis crítico de correlación vs causalidad
+
+Aplicación práctica de text analytics sobre datos reales
+
+🚀 Aplicabilidad a negocio
+
+El framework puede aplicarse en formación, RRHH o producto digital para:
+
+Detectar señales tempranas de sobrecarga
+
+Analizar feedback cualitativo a escala
+
+Evaluar impacto emocional de programas formativos
+
+Diseñar intervenciones basadas en datos
+
+Ela Ruiz González
+Data Analyst
+Python · SQL · Pandas · Visualización · Text Analytics

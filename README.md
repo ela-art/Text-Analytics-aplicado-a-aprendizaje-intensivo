@@ -1,3 +1,13 @@
+
+
+
+
+
+![alt text](image.png)
+
+
+
+
 # Text Analytics aplicado a aprendizaje intensivo  
 **Ela Ruiz González**
 
